@@ -45,4 +45,14 @@ public class Operación {
             return Double.NaN; // Valor no numérico
         }
     }
+
+    public double potenciacion() {
+        return Math.pow(a, b);
+    }
+
+    public double raiz() {
+        double raizCuadradaA = Math.sqrt(a);
+        double raizAelevadaB = Math.pow(a, 1 / b);
+        return raizCuadradaA + raizAelevadaB;
+    }
 }
